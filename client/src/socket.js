@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
-// Uses environment variable for production, falls back to localhost for development
-const SERVER_URL = process.env.REACT_APP_SERVER_URL || 'http://localhost:5000';
+// Directly set your Render server URL here
+const SERVER_URL = 'https://nexcall-server-enl1.onrender.com';
 
 const socket = io(SERVER_URL, {
   transports: ['websocket', 'polling'],
